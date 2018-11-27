@@ -10,19 +10,19 @@ function cal() {
       break;
 
     case "subtracao":
-      alert(subtracao(first.value - parseFloatsecond.value));
+      alert(subtracao(first.value, parseFloatsecond.value));
       break;
 
     case "multiplicacao":
-      alert(multiplicacao(first.value * second.value));
+      alert(multiplicacao(first.value, second.value));
       break;
 
     case "divisao":
-      alert(divisao(first.value / second.value));
+      alert(divisao(first.value, second.value));
       break;
 
     case "exponenciacao":
-      alert(exponenciacao(first.value ** second.value));
+      alert(exponenciacao(first.value , second.value));
       break;
   }
 }
