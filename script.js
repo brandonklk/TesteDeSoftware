@@ -6,23 +6,43 @@ function cal() {
 
   switch (campo) {
     case "soma":
-      alert(parseFloat(second.value) + parseFloat(first.value));
+      alert(soma(second.value, first.value));
       break;
 
     case "subtracao":
-      alert(parseFloat(first.value) - parseFloat(second.value));
+      alert(subtracao(first.value - parseFloatsecond.value));
       break;
 
     case "multiplicacao":
-      alert(parseFloat(first.value) * parseFloat(second.value));
+      alert(multiplicacao(first.value * second.value));
       break;
 
     case "divisao":
-      alert(parseFloat(first.value) / parseFloat(second.value));
+      alert(divisao(first.value / second.value));
       break;
 
     case "exponenciacao":
-      alert(parseFloat(first.value) ** parseFloat(second.value));
+      alert(exponenciacao(first.value ** second.value));
       break;
   }
 }
+
+function soma(a,b) {
+    return parseFloat(a) + parseFloat(b);
+}
+
+function subtracao(a,b){
+    return parseFloat(a) - parseFloat(b);
+}
+
+function multiplicacao(a,b){
+    return parseFloat(a) * parseFloat(b);
+}
+
+function divisao(a,b){
+    return parseFloat(a) / parseFloat(b);
+}
+function exponenciacao(a,b){
+    return parseFloat(a) ** parseFloat(b);
+}
+module.exports = {soma, subtracao, multiplicacao,divisao, exponenciacao};
